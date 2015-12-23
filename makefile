@@ -6097,6 +6097,7 @@ linux:
 	else HAVE_OPENPTY=''; fi ; \
 	HAVE_LIBCURSES=''; \
 	if test -f /usr/lib64/libncurses.so || \
+	   test -f /usr/lib/x86_64-linux-gnu/libncurses.a || \
 	   test -f /usr/lib/libncurses.a  || \
 	   test -f /usr/lib/libncurses.so; then \
 	  HAVE_LIBCURSES='-lncurses'; \
